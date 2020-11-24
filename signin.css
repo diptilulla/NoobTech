@@ -82,6 +82,7 @@ body {
     width: 370px;
     min-width: 207px;
     align-self: center;
+    margin: 5px;
     
   }
   .login-form input[type="text"],
@@ -146,7 +147,11 @@ body {
   body{
       display: flex;
       flex-direction: column;
+      max-height: 100vh;
 
+  }
+  .login-form{
+    width: 50%;
   }
 }
   

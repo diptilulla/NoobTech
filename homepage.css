@@ -286,11 +286,12 @@ body{
         justify-content: flex-start;
         padding: 4px 1% ;
     }
+    
     .box-1 button{
         font-size: 13px;
     }
     .nav-container .brand a{
-        font-size: 20px!important;
+        font-size: 19px!important;
     }
 
 

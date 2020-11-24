@@ -4,6 +4,26 @@ body{
    
    
 }
+#getStarted {
+    display: block!important;
+      margin-top: 8%!important;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%)!important;
+      box-shadow: 1px 2px 2px 2px #B483FF;
+      border-radius: 60px!important;
+      padding: 3.5% 8%  ;
+      border:none;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 3vmin;
+      color: #8839FF;
+      transition: all 0.4s;
+      cursor: pointer;
+  }
+  #getstarted:hover{
+  background: #F2E9FF; 
+  
+  }
 .nav-container{  
     grid-column: span 3;
     display:flex;
@@ -114,27 +134,7 @@ body{
     
   
 }
-#getstarted{
-    display: block;
-    margin-top: 8%;
-    background: linent(180deg, #FFFFFF 0%, #FFFFFF 100%);
-    box-shadow: 1px 2px 2px 2px #B483FF;
-    border-radius: 60px;
-    padding: 3.5% 8%  ;
-    border:none;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 3vmin;
-    color: #8839FF;
-    transition: all 0.4s;
-    cursor: pointer;
-}
 
-#getstarted:hover{
-background: #F2E9FF;
-
-}
 
 
 

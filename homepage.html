@@ -19,13 +19,13 @@
         <li class="brand"><a href="#">Skill++</a></li>
         <li><a href="aboutus.html">About Us</a></li>
         <li><a href="contactus.html">Contact</a></li>
-        <li><a class="button" href="sign.html">Sign in</a></li>
+        <li><a class="button" href="signin.html">Sign in</a></li>
     </ul>
     
     <div class="box-1">
     Learn Adapt Overcome.
-    <button id="getstarted">Get Started</button>
-    </div>
+    <button id="getStarted">Get started</button>
+</div>
     <div class="box-2">
     <img src="imgs/stairs.png">
     </div>
@@ -41,6 +41,12 @@
     <div class="box-12">REACH YOUR GOALS TOGETHER </div>
     <div class="footer">Credits</div>
 </div>
-        
+
+
+<script type="text/javascript">
+    var button=document.getElementById("getStarted");
+    button.addEventListener("click", function () {
+        window.location.href="signin.html"; }   );
+</script>
 </body>
 </html>

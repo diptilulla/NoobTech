@@ -35,20 +35,7 @@ body{
     background-color: #1F1F1F;
 
 }
-@media (max-width: 550px) {
-    body{
-        font-size: 13px;
-    }
-    .nav-container{
-        justify-content: flex-start;
-        padding: 4px 1% ;
-    }
-    .box-1 button{
-        font-size: 13px;
-    }
 
-
-}
   
 
 .nav-container li{
@@ -291,6 +278,22 @@ body{
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+@media (max-width: 550px) {
+    body{
+        font-size: 13px;
+    }
+    .nav-container{
+        justify-content: flex-start;
+        padding: 4px 1% ;
+    }
+    .box-1 button{
+        font-size: 13px;
+    }
+    .nav-container .brand a{
+        font-size: 20px!important;
+    }
 
+
+}
 
 

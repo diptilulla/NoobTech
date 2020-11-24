@@ -142,4 +142,11 @@ body {
      max-width: 30vmax;
      
  }
+ @media (max-width: 550px) {
+  body{
+      display: flex;
+      flex-direction: column;
+
+  }
+}
   

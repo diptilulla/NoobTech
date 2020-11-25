@@ -44,7 +44,7 @@ body{
 
 .nav-container li{
     display: block;
-    margin: 0 3.7%;
+    margin: 0 2%;
 }
 
 .nav-container li a{
@@ -53,6 +53,7 @@ body{
     color:#E5E5E5;
     transition: all 0.4s;
     font-family: Inter;
+    font-size:14.5px;
     font-style: normal;
     font-weight: 600;
 }
@@ -153,7 +154,7 @@ body{
     font-family: Poppins;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.7vmin;
+    font-size: 2.4vmin;
     line-height: 1.6;
     text-align: justify;
     letter-spacing: 0.06em;
@@ -187,7 +188,7 @@ body{
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     line-height:1.6;
     letter-spacing: 0.06em;
     color: #7B14FF;
@@ -202,7 +203,7 @@ body{
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     line-height:1.6;
     letter-spacing: 0.06em;
     color: #FFFFFF;
@@ -264,7 +265,7 @@ body{
     font-family: Poppins;
     font-style: normal;
     font-weight: 400;
-    font-size: 2.5vmin;
+    font-size: 2vmin;
     line-height:1.6;
     letter-spacing: 0.06em;
     color: #7B14FF;
@@ -299,10 +300,7 @@ body{
     margin-right: 10px; 
     background-color: transparent;
     padding: 2px!important;
-    transition: all 0.2s;
-        transition:height 1s ease-out;
-        height:0;
-        overflow:hidden;
+    
     
 }
 .display li {
@@ -323,10 +321,15 @@ body{
     text-decoration: none!important;
     color:#E5E5E5;
     transition: all 0.4s;
+    font-size: 10px;
     font-family: Inter;
     font-style: normal;
-    font-weight: 600;
-    
+    font-weight: 600;    
+}
+
+.display li a:hover{
+    text-decoration: none!important;
+    color: #954EF0;
 }
 @media (max-width: 550px) {
     body{
@@ -336,8 +339,15 @@ body{
     .nav-container #hamburger{
         display: block!important;
     }
+    .box-1{
+    grid-column: span 2;
+    }
+    .box-2{
+        grid-column: span 1!important;
+    }
     
     .box-1 button{
+        word-wrap: break-word;
         font-size: 13px;
     }
     .nav-container .brand a{
@@ -347,3 +357,5 @@ body{
         display: none;
     }
 }
+
+

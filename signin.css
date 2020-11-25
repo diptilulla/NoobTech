@@ -148,8 +148,6 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 99vh;
-
   }
   .login-form{
     width: 70vw;

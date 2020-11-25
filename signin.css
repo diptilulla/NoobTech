@@ -97,7 +97,7 @@ body {
     outline:none;
     padding-left:10px;
     background:#ffffff;
-    color:#959595;
+    color:#333333;
     font-family: Poppins,Inter,sans-serif;
   }
   .login-form input[type="button"] {

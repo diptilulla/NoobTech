@@ -17,9 +17,15 @@
 
     <ul class="nav-container">
         <li class="brand"><a href="#">Skill++</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="contactus.html">Contact</a></li>
-        <li><a class="button" href="signin.html">Sign in</a></li>
+        <li class="nav"><a href="aboutus.html">About Us</a></li>
+        <li class="nav"><a href="contactus.html">Contact</a></li>
+        <li class="nav"><a class="button" href="signin.html">Sign in</a></li>
+        <li><img src="imgs/menu hamburger.png" id="hamburger" > </li>
+    </ul>
+    <ul id="submenu">
+        <li class="nav"><a href="aboutus.html">About Us</a></li>
+        <li class="nav"><a href="contactus.html">Contact</a></li>
+        <li class="nav"><a href="signin.html">Sign in</a></li>
     </ul>
     
     <div class="box-1">
@@ -47,6 +53,11 @@
     var button=document.getElementById("getStarted");
     button.addEventListener("click", function () {
         window.location.href="signin.html"; }   );
+    var menu=document.getElementById("hamburger");
+    menu.addEventListener("click", function () {
+        document.getElementById("submenu").classList.toggle("display");
+    } );
+
 </script>
 </body>
 </html>

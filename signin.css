@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, a {
   justify-content: space-between;
   height:95vh;
   padding-top:5vh;
-  
+  width: 100vw;
 }
 .login-form h5 {
   text-align:left;

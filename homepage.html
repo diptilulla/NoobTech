@@ -57,6 +57,19 @@
     menu.addEventListener("click", function () {
         document.getElementById("submenu").classList.toggle("display");
     } );
+    //    if(menu.style.display==="none")
+    // {
+    //     document.getElementById("submenu").style.display="none!important";
+    // }
+    window.addEventListener("resize", function(){
+        var width = document.documentElement.clientWidth;
+    var height = document.documentElement.clientHeight;
+    if(width>550&&document.getElementById("submenu").classList.contains("display"))
+    {
+        document.getElementById("submenu").classList.remove("display");
+    }        
+    });
+
 
 </script>
 </body>

@@ -24,6 +24,10 @@ body{
   background: #F2E9FF; 
   
   }
+
+#submenu{
+    display:none;
+}
 .nav-container{  
     grid-column: span 3;
     display:flex;
@@ -90,6 +94,10 @@ body{
 }
 .nav-container .button:active {
     box-shadow: 2px 2px 2px rgba(238, 225, 255, 1);
+}
+
+.nav-container #hamburger{
+    display: none;
 }
 
 .container{
@@ -278,13 +286,55 @@ body{
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
+.display{
+    width: 1fr;
+    box-sizing: border-box;
+    display: flex!important;
+    flex-direction: column;
+    justify-content: stretch;
+    /* align-items: flex-end; */
+    grid-column:span 3;
+    grid-column: 3;
+    margin-right: 10px; 
+    background-color: transparent;
+    padding: 2px!important;
+    transition: all 0.2s;
+        transition:height 1s ease-out;
+        height:0;
+        overflow:hidden;
+    
+}
+.display li {
+    display: block;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 3.7%;
+    border-bottom: 1px solid rgba(238, 225, 255, 0.1);
+    /* border-style:solid !important;
+    border-color: oldlace; */
+    /* margin: 10px; */
+    padding: 5px;
+    padding: 10px 5px;
+}
+
+.display li a{
+    text-align: center;
+    text-decoration: none!important;
+    color:#E5E5E5;
+    transition: all 0.4s;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    
+}
 @media (max-width: 550px) {
     body{
         font-size: 13px;
     }
-    .nav-container{
-        justify-content: flex-start;
-        padding: 4px 1% ;
+   
+    .nav-container #hamburger{
+        display: block!important;
     }
     
     .box-1 button{
@@ -293,8 +343,7 @@ body{
     .nav-container .brand a{
         font-size: 19px!important;
     }
-
-
+    .nav-container .nav{
+        display: none;
+    }
 }
-
-

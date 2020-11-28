@@ -165,8 +165,6 @@ h1, h2, h3, h4, h5, h6, a {
     font-size: 14px;
   }
   .top{
-    max-width:22vw;
+    max-width:22.5vw;
   }
-  .bottom{
-    max-width:20vw;
-  }
+

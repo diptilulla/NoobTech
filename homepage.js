@@ -1,6 +1,6 @@
 var button=document.getElementById("getStarted");
     button.addEventListener("click", function () {
-        window.location.href="signin.html"; }   );
+        window.location.href="signup.html"; }   );
     var menu=document.getElementById("hamburger");
     var submenu=document.getElementById("submenu");
     menu.addEventListener("click", function () {

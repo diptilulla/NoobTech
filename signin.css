@@ -158,4 +158,11 @@ h1, h2, h3, h4, h5, h6, a {
 .login-form{
   width: 70vw;
 }
-}
+.login-form h3 
+  {
+    font-size: 13px;
+  }
+ .getstarted
+  {
+    font-size: 14px;
+  }

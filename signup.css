@@ -1,12 +1,12 @@
 html{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
 }
 body {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   background:#262626;
   margin:0;
   padding:0;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, a {
   justify-content: space-between;
   height:100vh;
 /*   padding-top:5vh; */
-  width: 100vw;
+  width: 100%;
 }
 .login-form h5 {
   text-align:left;
@@ -153,13 +153,13 @@ h1, h2, h3, h4, h5, h6, a {
    align-self: flex-end;
    
 }
-@media (max-width: 550px) {
+@media (max-width: 545px) {
 .container{
     padding: 0;
     margin: 0;
     /* box-sizing: border-box; */
     display: grid;
-    widows: 100%;;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:  max-content;
     /* display: flex; */
@@ -184,9 +184,12 @@ h1, h2, h3, h4, h5, h6, a {
   }
   .top{
     justify-self: end;
+    max-width: 22vw;
     grid-row: 1;
     grid-column: 2;
+    
   }
   .bottom{
     grid-row: 3;
+    max-width: 20vw;
   }

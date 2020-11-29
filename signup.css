@@ -188,7 +188,7 @@ h1, h2, h3, h4, h5, h6, a {
   .top{
     justify-self: end;
     /*max-width: 26vw;*/
-    max-height:20vh;
+    max-height:22vh;
     grid-row: 1;
     grid-column: 2;
     

@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6, a {
     justify-self: end;
     /*max-width: 26vw;*/
     max-height:28vh;
-     height: calc(var(--vh, 1vh) * 20);
+     max-height: calc(var(--vh, 1vh) * 28);
     grid-row: 1;
     grid-column: 2;
     
@@ -198,5 +198,5 @@ h1, h2, h3, h4, h5, h6, a {
     grid-row: 3;
     /*max-width: 23vw;*/
     max-height:17vh;
-      height: calc(var(--vh, 1vh) * 17);
+      max-height: calc(var(--vh, 1vh) * 17);
   }

@@ -142,18 +142,21 @@ h1, h2, h3, h4, h5, h6, a {
    max-width: 25vmax;
    height: auto;
    align-self: start;
+   padding:4px;
 }
 .to-do{
    align-self: flex-end;
    max-width: 30vmax;
-   
+   padding:0 1px;
 }
 @media (max-width: 550px) {
 .container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:100vw!important;
+    width:100vw;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
 }
 .login-form{
   width: 70vw;

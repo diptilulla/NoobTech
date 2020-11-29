@@ -187,12 +187,12 @@ h1, h2, h3, h4, h5, h6, a {
   }
   .top{
     justify-self: end;
-    max-width: 26vw;
+    max-width: 20vh;
     grid-row: 1;
     grid-column: 2;
     
   }
   .bottom{
     grid-row: 3;
-    max-width: 23vw;
+    max-width: 18vh;
   }

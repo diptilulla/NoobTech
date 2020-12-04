@@ -1,41 +1,30 @@
-<head>	<head>
-    <meta charset="UTF-8">	    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signin</title>	    <title>Signup</title>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>	    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>	    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>	    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="signin.css">	    <link rel="stylesheet" type="text/css" href="signup.css">
-</head>	</head>
-<body>	<body>
-<div class="container">	<div class="container">
-<img class="target" src="imgs/In progress (5).gif"> 	<img class="bottom" src="imgs/signup5.png"> 
-    <div class="login-form">	    <div class="login-form">
-
-
-          <h5>Username:</h5>	          <h5>Username:</h5>
-          <input type="text" placeholder="Username or Email"/><br>	          <input type="text" placeholder="Username"/><br>
-          <h5>Email:</h5>
-          <input type="text" placeholder="Email"/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<body>
+<div class="container">
+<img class="target" src="imgs/In progress (5).gif"> 
+    <div class="login-form">
+        
+          <h5>Username:</h5>
+          <input type="text" placeholder="Username or Email"/><br>
+          <h5>Password:</h5>
+          <input type="password" placeholder="Password"/>
           <br>
-          <h5>Password:</h5>	          <h5>Password:</h5>
-          <input type="password" placeholder="Password"/>	          <input type="password" placeholder="Password"/>
-          <br>	          <br>
-          <h4><a class="forgot" href="#" >Forgot Password</a></h4>	          <h5>Confirm Password:</h5>
-          <input type="button" value="Sign in" class="login-button"/>	          <input type="password" placeholder="Confirm Password"/>
-          <h3>Don’t have an account yet? <a class="getstarted" href="./signup.html" > Get Started</a></h3> 	          <br>
-    </div>	          <input type="button" value="Create Account" class="login-button" onclick="window.open('./register.html')"/>
-    <img class="to-do" src="imgs/signin.png">	          <h3>Already have an account? <a class="login" href="./signin.html" > Log in </a></h3> 
-    </div>	    </div>
-        <script>	    <img class="top" src="imgs/signup.png">
+          <h4><a class="forgot" href="#" >Forgot Password</a></h4>
+          <input type="button" value="Sign in" class="login-button"/>
+          <h3>Don’t have an account yet? <a class="getstarted" href="./signup.html" > Get Started</a></h3> 
+    </div>
+    <img class="to-do" src="imgs/signin.png">
+    </div>
 
-
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit	
-let vh = window.innerHeight * 0.01;	
-// Then we set the value in the --vh custom property to the root of the document	
-document.documentElement.style.setProperty('--vh', `${vh}px`);	
-    </script>	
-
-
-</body>	</body>
+</body>
 </html>

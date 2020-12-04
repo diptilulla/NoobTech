@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+   
+        <svg width="100%" viewBox="0 0 1646 217" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1647 182.622C1018 307 750 39 0 199C0 -34.0593 0 246.064 0 0H846H1647V182.622Z" fill="#A158FE"/>
+            </svg>
+          <div class='flexbox'>
+    <div class="image">
+      <img src="./imgs/9812.png">
+    </div>     
+    
+    <form class="container" action="" method="post" autocomplete="on">
+    <div class="login-form">
+        <label for="fname">First Name * :</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="cno">Contact number:</label>
+    <input type="text" id="cno" name="contact" placeholder="Your contact no..">
+       
+        
+        
+  </div>
+  <div class="login-form">
+    
+
+    <label for="country">Country</label> <br>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="Canada">Canada</option>
+      <option value="Usa">USA</option>
+    </select>
+ 
+    <label for="birthday">Birthday * :</label> <br>
+    <input type="date" id="birthday" name="birthday" required>
+
+    <h5>Gender:</h5><br>
+        <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+    
+   
+</div>
+<div class="bottom">
+<label for="about">Tell us something about yourself</label><br>
+<input type="text" id="about" name="bio" placeholder="About yourself.."></div>
+<div class="final">
+<input type="submit" value="Submit"></div>
+
+
+    </form>
+          </div>
+</body>
+</html>

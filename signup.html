@@ -25,16 +25,11 @@
           <h5>Confirm Password:</h5>
           <input type="password" placeholder="Confirm Password"/>
           <br>
-          <input type="button" value="Create Account" class="login-button"/>
+          <input type="button" value="Create Account" class="login-button" onclick="window.open('./register.html')"/>
           <h3>Already have an account? <a class="login" href="./signin.html" > Log in </a></h3> 
     </div>
     <img class="top" src="imgs/signup.png">
-    <script>
+    
 
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-</script>
 </body>
 </html>

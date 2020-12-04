@@ -165,7 +165,7 @@ select option{
 .bottom {
     grid-column: span 2;
     margin: 5px;
-min-width: 370px;
+min-width: 207px;
 }
 
 .image {
@@ -198,6 +198,9 @@ min-width: 370px;
     }
     .login-form:nth-child(2){
         margin-top: 0;
+    }
+    .login-form,.bottom{
+        width: 70vw;
     }
 
     .bottom{

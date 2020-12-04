@@ -5,7 +5,7 @@ html{
     width: 100vw; */
 }
 body {
-  height: 100vh;
+  /*height: 100vh;*/
   /* width: 100vw; */
   background:#262626;
   margin:0;
@@ -102,11 +102,11 @@ h1, h2, h3, h4, h5, h6, a {
   /* font-family: 'Ubuntu', sans-serif; */
   margin:1em 0;
   border-radius:5px;
-  border:2px solid #9D5BFF;
+  border:2px solid #f2f2f2;
   outline:none;
   padding-left:10px;
-  background:transparent;
-  color:#fff;
+  background:#ffffff;
+  color:#333333;
   font-family: Poppins,Inter,sans-serif;
 }
 .login-form input[type="button"] {
@@ -132,12 +132,12 @@ h1, h2, h3, h4, h5, h6, a {
   }
   
 ::-webkit-input-placeholder{
-  color:#C4C4C4;
+  color:#959595;
   font-family: Poppins,Inter,sans-serif;
 }
 
 ::-moz-input-placeholder{
-  color:#C4C4C4;
+  color:#959595;
   font-family: Poppins,Inter,sans-serif;
 }
 
@@ -151,14 +151,14 @@ h1, h2, h3, h4, h5, h6, a {
 .bottom{
    max-width: 18vw;
    align-self: flex-end;
-}
-.bottom input{
-  overflow: scroll;
+   
 }
 @media (max-width: 545px) {
 .container{
     padding: 0;
     margin: 0;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
     /* box-sizing: border-box; */
     display: grid;
     width: 100%;
@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6, a {
     /* justify-content: space-around; */
     /* width:90vw!important; */
 }
+
 
 .login-form{
   grid-column: span 2;
@@ -184,16 +185,14 @@ h1, h2, h3, h4, h5, h6, a {
   {
     font-size: 14px;
   }
- .top{
+  .top{
     justify-self: end;
-    /*max-width: 26vw;*/
-    max-height:28vh;
+    max-width: 24vw;
     grid-row: 1;
     grid-column: 2;
     
   }
   .bottom{
     grid-row: 3;
-    /*max-width: 23vw;*/
-    max-height:17vh;
+    max-width: 19vw;
   }

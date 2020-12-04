@@ -165,7 +165,9 @@ select option{
 .bottom {
     grid-column: span 2;
     margin: 5px;
+min-width: 370px;
 }
+
 .image {
     align-self: flex-end;
 
@@ -181,3 +183,27 @@ select option{
     display:flex;
     justify-content: start;
 }
+
+@media (max-width: 545px) {
+    .image{
+        display: none;
+    }
+
+    .container{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto ;
+        /* grid-template-columns: 1fr; */
+    }
+    .login-form:nth-child(2){
+        margin-top: 0;
+    }
+
+    .bottom{
+       margin: 8px;
+
+    }
+    .final{
+        margin: 0 auto 10px auto;
+    }

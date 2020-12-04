@@ -190,6 +190,7 @@ min-width: 207px;
     }
 
     .container{
+        padding-top:0;
         width: auto;
         display: flex;
         flex-direction: column;

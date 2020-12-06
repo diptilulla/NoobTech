@@ -64,14 +64,14 @@ html{
 }
 
 svg{
-    width: 70%;
+    width: 74%;
     margin: 0 0 0 15px;
     padding: 0;
     position: relative;
     top: -3vmax;
 }
 h1{
-    margin: 20px 0 0 30px;
+    margin: 20px 2px 0 30px;
     color: #fff;
     font-family: Poppins,Inter,sans-serif;
     font-family: Poppins;
@@ -133,4 +133,14 @@ text-align: justify;
 .active{
 box-shadow:0 0 5px 1px #D5C3FC;
 background-color: #2C2C2C;
+}
+
+@media (max-width: 550px) {
+    h1{
+        font-size: 22px;
+        text-align: left;
+    }
+    svg{
+        display:none;
+    }
 }

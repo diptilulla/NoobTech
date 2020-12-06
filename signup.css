@@ -125,10 +125,12 @@ margin: 1em 2em;
 transition: all 0.4s;
 text-align: center;
 border: none!important;
+outline: none;
 }
 .login-form input[type=button]:hover{
 opacity: 0.8;
 background-color:#F4ECFF;
+outline: none;
 /* color: #ffffff; */
 }
 

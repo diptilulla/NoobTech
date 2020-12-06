@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Montserrat:ital,wght@0,400;0,500;1,400&display=swap');
+body {
+  background:#8f69c9;
+}
+#forcolor{
+  font-family: Space Mono, monospace;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.205em;
+  color:  #8839FF;
+}
+#cont{
+  background-color: rgb(34, 33, 33);
+}
+
+nav .navbar-nav li a{
+  color: white !important;
+  text-align: center;
+  text-decoration: none!important;
+  transition: all 0.4s;
+  font-family: 'Lora', serif;
+  font-size:17.5px;
+  font-weight: 600;
+}
+nav .navbar-nav li a:hover{
+  background-color: #8839FF;
+}
+
+#btncol{
+  text-align: center;
+  font-weight: bolder;
+  padding: 9px 25px;
+  background: linear-gradient(180deg, #8629FD 0%, #A76CF2 100%);
+  transition: box-shadow 0.4s;
+}
+
+#btncol:hover{
+  color:#E5E5E5;
+  background: linear-gradient(180deg, #7000FF 0%, #954EF0 100%);
+  box-shadow: 1px 1px 2px rgba(238, 225, 255, 0.5);
+}
+.interestcontainer {
+    display: none;
+}
+
+h1, h5{
+  font-family: 'Lora', serif;
+	font-weight: bolder;
+}
+
+li a{
+  color: #060608;
+}
+
+li a:hover{
+  color:  #060608 !important;
+}
+
+#joinchat {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: bolder;
+  padding: 9px 25px;
+  background: linear-gradient(180deg, #8629FD 0%, #A76CF2 100%);
+  border-radius: 50px;
+  transition: box-shadow 0.4s;
+  border: 2px #fff;
+}
+
+#joinchat:hover{
+  color:#E5E5E5;
+  background: linear-gradient(180deg, #7000FF 0%, #954EF0 100%);
+  box-shadow: 1px 1px 2px rgba(238, 225, 255, 0.5); 
+}
+
+.card{
+  background-color: #EEE1FF;
+  border-radius: 25px;
+  border-color: #E5E5E5;
+
+}
+.hide{
+    display: none!important;
+}
+#image{
+  border-radius: 24px 24px 3px 3px; 
+}

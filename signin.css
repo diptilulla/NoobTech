@@ -121,10 +121,12 @@ h1, h2, h3, h4, h5, h6, a {
   /* padding-left: 10px; */
   transition: all 0.4s;
   text-align: center;
+  outline: none;
 }
 .login-form input[type=button]:hover{
   opacity: 0.8;
   background-color:#F4ECFF;
+  outline:none;
   /* color: #ffffff; */
   }
   

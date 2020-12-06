@@ -31,7 +31,7 @@
         <ul class="nav navbar-nav navbar-right">
              <li><form class="navbar-form navbar-right" role="search">
   <div class="form-group" id="formid">
-    
+    <input type="search" id="search" style="width: 400px; height: 45px;" class= "form-control" placeholder="Search Chatroom">
                </div></li>
           <li><button type="submit" id="btncol" class="btn btn-default">Search</button></li>
   
@@ -43,8 +43,7 @@
   <div class="interestcontainer container">
   <h1 id="interestheading">RECOMMENDED FOR YOU</h1><hr><br>
   <div class="card-deck"></div>
-  </div><br><br> 
-  <input type="search" id="search" style="width: 400px; height: 45px;" class= "form-control" placeholder="Search Chatroom">
+  </div><br><br>    
   <div class = "container">
     <h1>TRENDING</h1>
     <hr><br>
@@ -127,23 +126,13 @@
       var chatrooms = [];
       var search = document.querySelector("#search");
       var carddeck=document.querySelectorAll('.card');
+      var l=carddeck.length;
 
       console.log(search);
     //   var display=[];
     //   var check=0
-    search.addEventListener("change",function (event) {
-var searchField=event.target.value;
-console.log(searchField);
-for(var i=0;i<chatrooms.length;i++){
-    if(!chatrooms[i].toLowerCase().includes(searchField.toLowerCase())){
-        document.getElementById(`${chatrooms[i]}`).style.display="none";
-    }
-    else {
-        document.getElementById(`${chatrooms[i]}`).style.display="block";
-    }
-}
-});
-// window.addEventListener('load',()=>{
+    
+window.addEventListener('load',()=>{
   
         // var interests= [];
         // interests.push((localStorage.getItem('interests')));
@@ -154,7 +143,7 @@ for(var i=0;i<chatrooms.length;i++){
 
     console.log(interests);  
      
-for(i=0;i<carddeck.length; i++){
+for(var i=0;i<l; i++){
     cards.push(carddeck[i].getAttribute("data-category"));
     chatrooms.push(carddeck[i].getAttribute("id"));
 }
@@ -164,7 +153,7 @@ for(i=0;i<carddeck.length; i++){
 if(interests.length>0)
 {
 
-    for(var i=0; i<cards.length; i++)
+    for(var i=0; i<l; i++)
     {
         for(var j=0;j<interests.length;j++)
         {
@@ -187,7 +176,19 @@ if(interests.length>0)
 // }
 // console.log(display);
 
-
+search.addEventListener("keyup",function (event) {
+var searchField=event.target.value;
+console.log(searchField);
+for(var i=0;i<chatrooms.length;i++){
+  var item=document.getElementById(`${chatrooms[i]}`)
+    if(!chatrooms[i].toLowerCase().includes(searchField.toLowerCase())){
+        item.style.display="none";
+    }
+    else {
+       item.style.display="block";
+    }
+}
+});
 // filterchatroom = chatrooms.filter(chatroom=>{
 // return !chatroom.toLowerCase().includes(searchField.toLowerCase())
 // })
@@ -201,7 +202,7 @@ if(interests.length>0)
 
     
 
-// }) 
+}) 
 
 
 </script> 

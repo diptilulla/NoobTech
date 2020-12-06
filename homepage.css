@@ -19,10 +19,11 @@ body{
       color: #8839FF;
       transition: all 0.4s;
       cursor: pointer;
+      outline:none;
   }
   #getstarted:hover{
   background: #F2E9FF; 
-  
+  outline:none;
   }
 
 #submenu{

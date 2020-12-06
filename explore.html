@@ -18,7 +18,7 @@
   <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top" id="cont">
     <div class = "container">
       <a id="forcolor"class="navbar-brand" href="#">Skill++</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
       </button>
   
@@ -31,15 +31,15 @@
         <ul class="nav navbar-nav navbar-right">
              <li><form class="navbar-form navbar-right" role="search">
   <div class="form-group" id="formid">
+    <input type="search" id="search" style="width: 400px; height: 45px;" class= "form-control" placeholder="Search Chatroom">
                </div></li>
           <li><button type="submit" id="btncol" class="btn btn-default">Search</button></li>
-  </form>
+  
         </ul>
     </div>
+    </div>
     </nav>
-  </div><br>
-    <input type="search" id="search" style="width: 400px; height: 45px;" class= "form-control" placeholder="Search Chatroom">
-<button type="submit" id="btncol" class="btn btn-default">Search</button>
+  <br>
   <div class="interestcontainer container">
   <h1 id="interestheading">RECOMMENDED FOR YOU</h1><hr><br>
   <div class="card-deck"></div>
@@ -118,8 +118,8 @@
         </ul>
       </div>
   </div>
-  <!-- <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script>
       var filterchatroom = []
       var cards=[];
@@ -130,7 +130,20 @@
       console.log(search);
     //   var display=[];
     //   var check=0
-window.addEventListener('load',()=>{
+    search.addEventListener("change",function (event) {
+var searchField=event.target.value;
+console.log(searchField);
+for(var i=0;i<chatrooms.length;i++){
+    if(!chatrooms[i].toLowerCase().includes(searchField.toLowerCase())){
+        document.getElementById(`${chatrooms[i]}`).style.display="none";
+    }
+    else {
+        document.getElementById(`${chatrooms[i]}`).style.display="block";
+    }
+}
+});
+// window.addEventListener('load',()=>{
+  
         // var interests= [];
         // interests.push((localStorage.getItem('interests')));
         // check=sessionStorage.getItem('check');
@@ -172,18 +185,7 @@ if(interests.length>0)
 //     document.querySelector("#interestheading").innerHTML="none today";
 // }
 // console.log(display);
-search.addEventListener("change",function (event) {
-var searchField=event.target.value;
-console.log(searchField);
-for(var i=0;i<chatrooms.length;i++){
-    if(!chatrooms[i].toLowerCase().includes(searchField.toLowerCase())){
-        document.getElementById(`${chatrooms[i]}`).classList.add("hide");
-    }
-    else {
-        document.getElementById(`${chatrooms[i]}`).classList.remove("hide");
-    }
-}
-});
+
 
 // filterchatroom = chatrooms.filter(chatroom=>{
 // return !chatroom.toLowerCase().includes(searchField.toLowerCase())
@@ -198,7 +200,7 @@ for(var i=0;i<chatrooms.length;i++){
 
     
 
-}) 
+// }) 
 
 
 </script> 

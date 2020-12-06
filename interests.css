@@ -1,0 +1,136 @@
+html{
+    margin: 0;
+    padding: 0;
+    /* height: 100vh;
+    width: 100vw; */
+  }
+  body {
+  /*height: 100vh;*/
+  /* width: 100vw; */
+  background:#262626;
+  margin:0;
+  padding:0;
+  font-family: Inter, sans-serif;
+  font-size:12px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  }
+.buttons{
+    width: max-content;
+    margin: 0 auto;
+}
+  input[type="button"] {
+    /* display: block!important; */
+    background: linear-gradient(180deg, #8629FD 0%, #A76CF2 100%);
+    box-shadow: 1px 2px 1px 2px #C4C4C4;
+      border-radius: 60px!important;
+      /* padding: 3.5% 8%  ; */
+      padding: 10px 24px;
+      border:none;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      color: #FFFFFF;
+      /* transition: all 0.7s; */
+      cursor: pointer;
+      margin: 5px;
+      outline: none;
+
+  }
+  input[type="button"]:hover,input[type="button"]:active{
+  background: #a366fd; 
+  /* color: #2C2C2C; */
+  
+  }
+
+.container,.interestcontainer{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,270px)) ;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin: 0 auto;
+}
+.interestcontainer {
+    display: none;
+}
+.header {
+    padding-bottom: 30px;
+    height: 8vmax;
+}
+
+svg{
+    width: 70%;
+    margin: 0 0 0 15px;
+    padding: 0;
+    position: relative;
+    top: -3vmax;
+}
+h1{
+    margin: 20px 0 0 30px;
+    color: #fff;
+    font-family: Poppins,Inter,sans-serif;
+    font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 4vmax;
+
+/* line-height: 72px; */
+/* identical to box height */
+
+text-align: justify;
+
+}  
+h2{
+    color: #D5C3FC;
+    padding: 0;
+    margin-top: 0;
+    font-family: Poppins,Inter,sans-serif;
+}
+
+.card{
+    box-sizing: border-box;
+/* width: 300px; */
+/* line-height:3em; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* min-width: max-content; */
+border-radius:5px;
+border:2px solid #9D5BFF;
+outline:none;
+padding:20px;
+background:transparent;
+font-family: Inter,sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #C4C4C4;
+}
+
+p{
+    display: inline-block;
+box-sizing: border-box;
+max-width: 100%;
+padding: 0;
+margin: 2px;
+text-align: justify;
+
+}
+
+.card img{
+    width:50px;
+    padding: 5px 0;
+}
+
+.card:hover{
+ background-color: #2C2C2C;
+}
+
+.active{
+box-shadow:0 0 5px 1px #D5C3FC;
+background-color: #2C2C2C;
+}

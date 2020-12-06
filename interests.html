@@ -52,26 +52,46 @@
       var userinterests=[];
       var check=0;
       var interest=document.querySelectorAll('.card');
+      var l=interest.length;
+      var ithinterest=0;
 
-        for(i=0;i<interest.length; i++){
+        for(i=0;i<l; i++){
+            
             interest[i].addEventListener("click",function(){
-                check=1;
-                ithinterest=this.getAttribute("id");
-                this.classList.add("active");
-                userinterests.push(ithinterest);
-                // console.log(userinterests);
+              
+                this.classList.toggle("active");
+              //   if(this.classList.contains("active")){
+              // console.log(interest[i]);
+              //     check=1;
+              //   var ithinterest=this.getAttribute("id");
+              //   userinterests.push(ithinterest);}
             })
+            
         }
-        // console.log(userinterests);
+
+        
+
+
+        console.log(userinterests);
         function handleSubmit() {
-            if(check==0)
+            
+          var choseninterest=document.querySelectorAll(".active");
+        console.log(choseninterest)
+        if(choseninterest.length==0)
             {
              alert("Select atleast one interest"); 
             } 
-            else{
+        else{
+        
+        var lchosen = choseninterest.length;
+
+        for(i=0;i<lchosen; i++){
+         userinterests.push(choseninterest[i].getAttribute("id"));
+        }}
+        console.log(userinterests);
+
             localStorage.setItem("interests", JSON.stringify(userinterests));
             location.href="explore.html";
-          }
 
             // localStorage.setItem("interests",userinterests);
             return;

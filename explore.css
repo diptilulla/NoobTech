@@ -56,6 +56,9 @@ li a{
 li a:hover{
   color:  #060608 !important;
 }
+.navbar-toggler{
+  outline: none!important;
+}
 
 #joinchat {
   text-align: center;
@@ -73,7 +76,16 @@ li a:hover{
   background: linear-gradient(180deg, #7000FF 0%, #954EF0 100%);
   box-shadow: 1px 1px 2px rgba(238, 225, 255, 0.5); 
 }
-
+.card-deck{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,320px)) ;
+  column-gap: 15px;
+  row-gap: 15px;
+  margin: 0 auto;
+}
 .card{
   background-color: #EEE1FF;
   border-radius: 25px;

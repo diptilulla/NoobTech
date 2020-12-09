@@ -133,6 +133,7 @@ text-align: justify;
 .active{
 box-shadow:0 0 5px 1px #D5C3FC;
 background-color: #2C2C2C;
+transform: scale(1.02);
 }
 
 @media (max-width: 550px) {

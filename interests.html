@@ -30,7 +30,7 @@
     </svg>
   </div>
     
-  <form action="explore.html" method="POST">
+  <form  method="POST">
     <div class="container">
       <div class="card" id="cooking"><h2>Cooking</h2><img src="./imgs/007-chef-hat.png"><p>Lorem ipsum dolor sit ametcidunt numquam nulla laborum</p></div>
       <div class="card" id="web design"><h2>Web Design</h2><img src="./imgs/002-website.png"><p>Lorem ipsum dolor sit ametcidunt numquam nulla laborum</p></div>
@@ -54,6 +54,7 @@
       var interest=document.querySelectorAll('.card');
       var l=interest.length;
       var ithinterest=0;
+      var button=document.querySelector('input[type="button"]')
 
         for(i=0;i<l; i++){
             
@@ -73,26 +74,27 @@
 
 
         console.log(userinterests);
-        function handleSubmit() {
+        function handleSubmit(event) {
             
           var choseninterest=document.querySelectorAll(".active");
         console.log(choseninterest)
+        
         if(choseninterest.length==0)
             {
-             alert("Select atleast one interest"); 
+             !alert("Select atleast one interest"); 
             } 
         else{
-        
         var lchosen = choseninterest.length;
 
         for(i=0;i<lchosen; i++){
          userinterests.push(choseninterest[i].getAttribute("id"));
+         localStorage.setItem("interests", JSON.stringify(userinterests));
+            location.href="explore.html";
+
         }}
         console.log(userinterests);
 
-            localStorage.setItem("interests", JSON.stringify(userinterests));
-            location.href="explore.html";
-
+           
             // localStorage.setItem("interests",userinterests);
             return;
         }

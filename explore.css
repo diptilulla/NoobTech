@@ -12,6 +12,15 @@ body {
 }
 #cont{
   background-color: rgb(34, 33, 33);
+  
+}
+#forcolor {
+  font-family: Space Mono, monospace;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.205em;
+    color: #8839FF;
 }
 
 nav .navbar-nav li a{
@@ -30,7 +39,7 @@ nav .navbar-nav li a:hover{
 #btncol{
   text-align: center;
   font-weight: bolder;
-  padding: 9px 25px;
+  padding: 3px 10px;
   background: linear-gradient(180deg, #8629FD 0%, #A76CF2 100%);
   transition: box-shadow 0.4s;
 }
@@ -42,6 +51,7 @@ nav .navbar-nav li a:hover{
 }
 .interestcontainer {
     display: none;
+    
 }
 
 h1, h5{

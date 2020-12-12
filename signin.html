@@ -20,18 +20,11 @@
           <input type="password" placeholder="Password"/>
           <br>
           <h4><a class="forgot" href="#" >Forgot Password</a></h4>
-          <input type="button" value="Sign in" class="login-button"/>
+          <input type="button" value="Sign in" class="login-button" onclick="location.href='./explore.html'"/>
           <h3>Don’t have an account yet? <a class="getstarted" href="./signup.html" > Get Started</a></h3> 
     </div>
     <img class="to-do" src="imgs/signin.png">
     </div>
-        <script>
-
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-let vh = window.innerHeight * 0.01;
-// Then we set the value in the --vh custom property to the root of the document
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-    </script>
 
 </body>
 </html>

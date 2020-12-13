@@ -231,7 +231,7 @@ body{
 .container .box-9{
     padding: 5%;
     display: flex;
-    aligh-items: flex-end;
+    align-items: flex-end;
     background-color: transparent;
     overflow: hidden;  /* NEW */
     min-width: 0;   

@@ -102,6 +102,7 @@ li a:hover{
 }
 .card-text {
   margin: 10px
+margin-right:20px
 display: inline-block;
 position: absolute;
 bottom:0;

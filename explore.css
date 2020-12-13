@@ -102,6 +102,8 @@ li a:hover{
 }
 .card-text {
   text-align: right;
+position: absolute;
+bottom:0;
 }
 .card-body {
   padding: 1rem 1rem 0.5rem 1rem;

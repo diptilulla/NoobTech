@@ -101,7 +101,7 @@ li a:hover{
   margin: 0;
 }
 .card-text {
-  text-align: right;
+  padding: 6px
 position: absolute;
 bottom:0;
 right:0;
